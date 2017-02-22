@@ -1,0 +1,17 @@
+name: snappyfox-test-classic
+version: '0.1'
+summary: snappyfox-test-classic
+description: snappyfox-test-classic
+
+grade: stable
+confinement: classic
+apps:
+  firefox-snap:
+    command: firefox
+    aliases: [firefox]
+
+parts:
+  soundwireserver:
+    plugin: dump
+    source: https://download.mozilla.org/?product=firefox-50.1.0-SSL&os=linux64&lang=en-US
+    source-type: tar
